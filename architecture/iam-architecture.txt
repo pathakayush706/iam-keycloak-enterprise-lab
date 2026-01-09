@@ -17,3 +17,14 @@ Applications
 Keycloak acts as a centralized Identity Provider handling authentication,
 authorization, and session management.
 Applications rely on Keycloak for identity verification and access decisions.
+
+Realm Boundary Overview
+
+- A dedicated application realm (IAM-LAB) was created to isolate identities,
+  roles, and applications.
+- The master realm was left unchanged to follow Keycloak best practices.
+- This separation mirrors tenant-based identity boundaries used in
+  enterprise IAM platforms such as Azure Entra or Okta.
+
+Refer to the screenshot:
+- realm-configuration-overview.png
