@@ -1,0 +1,19 @@
+IAM Architecture – Keycloak Lab
+
+Users
+  |
+  |  (OIDC Authentication + MFA)
+  v
+Keycloak (Identity Provider)
+  - User authentication
+  - MFA enforcement
+  - Role-based access control
+  - Token issuance
+  |
+  v
+Applications
+  - OIDC Client (demo-app)
+
+Keycloak acts as a centralized Identity Provider handling authentication,
+authorization, and session management.
+Applications rely on Keycloak for identity verification and access decisions.
